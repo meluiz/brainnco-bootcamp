@@ -86,24 +86,32 @@ body {
   border-color: #FF0080;
 }
 
-
-
 .header {
   grid-area: header;
+  display: block;
+  position: relative;
 }
 
 .menu {
   grid-area: menu;
+  display: block;
+  position: relative;
 }
 
 .sidebar {
   grid-area: sidebar;
+  display: block;
+  position: relative;
 }
 
 .main {
   grid-area: main;
+  display: block;
+  position: relative;
 }
 
 .footer {
   grid-area: footer;
+  display: block;
+  position: relative;
 }
