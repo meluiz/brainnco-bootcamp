@@ -264,6 +264,26 @@ body {
   position: relative;
 }
 
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  padding: 24px 32px;
+  margin: 0 auto;
+}
+
+.main-container h1 {
+  margin-bottom: 24px;
+}
+
+.main-container h2 {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.main-container p {
+  margin-bottom: 12px;
+}
+
 .footer {
   grid-area: footer;
   display: block;
