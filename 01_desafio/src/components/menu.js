@@ -3,9 +3,9 @@ import Button from './button'
 
 const Menu = () => {
   return (
-    <nav class="menu">
-      <div class="box" data-label="Menu">
-        <div class="menu-container">
+    <nav className="menu">
+      <div className="box" data-label="Menu">
+        <div className="menu-container">
           <H1>Brainn Co.</H1>
           <Button kind="primary">Say hello</Button>
         </div>
