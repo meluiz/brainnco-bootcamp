@@ -230,6 +230,7 @@ body {
 }
 
 .sidebar-sticky {
+  max-width: 256px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 24px;
