@@ -1,9 +1,9 @@
-const Image = ({ src, alt }) => {
+const Avatar = ({ src, alt }) => {
   return (
-    <figure className="image">
+    <figure className="avatar">
       <img src={src} alt={alt} />
     </figure>
   )
 }
 
-export default Image
+export default Avatar
