@@ -1,3 +1,5 @@
+import Box from './box'
+
 import { H4, H5 } from './heading'
 import Button from './button'
 import Image from './image'
@@ -6,7 +8,7 @@ import Text from './paragraph'
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <div className="box" data-label="Sidebar">
+      <Box label="Sidebar">
         <div className="sidebar-container">
           <div className="sidebar-sticky">
             <div className="sidebar-info">
@@ -25,7 +27,7 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Box>
     </aside>
   )
 }

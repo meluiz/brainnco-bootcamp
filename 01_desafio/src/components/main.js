@@ -1,10 +1,11 @@
+import Box from './box'
 import { H1, H2 } from './heading'
 import Text from './paragraph'
 
 const Main = () => {
   return (
     <main className="main">
-      <div className="box" data-label="Main">
+      <Box label="Main">
        <div className="main-container">
           <H1>Frases de Lerolero</H1>
           <Text>Caros amigos, o desafiador cenário globalizado possibilita uma
@@ -35,7 +36,7 @@ const Main = () => {
 
           <H2>I-Isso é tudo, p-p-pessoal</H2>
        </div>
-      </div>
+      </Box>
     </main>
   )
 }
