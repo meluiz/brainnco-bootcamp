@@ -86,6 +86,42 @@ body {
   border-color: #FF0080;
 }
 
+.heading-1 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.heading-2 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.heading-3 {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.heading-4 {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.heading-5 {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.heading-6 {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
 .header {
   grid-area: header;
   display: block;
