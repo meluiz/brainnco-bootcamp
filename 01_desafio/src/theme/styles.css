@@ -122,6 +122,11 @@ body {
   font-size: 12px;
 }
 
+.text.small {
+  color: #7C7977;
+  font-size: 14px;
+}
+
 .header {
   grid-area: header;
   display: block;
