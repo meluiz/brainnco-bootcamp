@@ -33,7 +33,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 256px 1fr;
-  grid-template-rows: 144px 64px auto 64px;
+  grid-template-rows: 144px 86px auto 86px;
   grid-template-areas: 'header header'
                        'menu menu'
                        'sidebar main'
