@@ -1,7 +1,7 @@
 import { H4 } from './heading'
 import Text from './paragraph'
 
-const Footer = ({ children }) => {
+const Footer = () => {
   return (
     <footer class="footer">
       <div class="box" data-label="Footer">
