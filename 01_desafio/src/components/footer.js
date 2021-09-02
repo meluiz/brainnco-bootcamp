@@ -1,7 +1,9 @@
 const Footer = ({ children }) => {
   return (
     <footer class="footer">
-      { children }
+      <div class="box" data-label="Footer">
+        { children }
+      </div>
     </footer>
   )
 }

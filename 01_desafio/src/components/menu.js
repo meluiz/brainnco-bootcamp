@@ -1,7 +1,9 @@
 const Menu = ({ children }) => {
   return (
     <nav class="menu">
-      { children }
+      <div class="box" data-label="Menu">
+        { children }
+      </div>
     </nav>
   )
 }

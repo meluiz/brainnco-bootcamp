@@ -1,7 +1,9 @@
 const Header = ({ children }) => {
   return (
     <header class="header">
-      { children }
+      <div className="box" data-label="header">
+        { children }
+      </div>
     </header>
   )
 }

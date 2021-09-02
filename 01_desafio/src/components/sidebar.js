@@ -1,7 +1,9 @@
 const Sidebar = ({ children }) => {
   return (
     <aside class="sidebar">
-      { children }
+      <div className="box" data-label="Sidebar">
+        { children }
+      </div>
     </aside>
   )
 }
