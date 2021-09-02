@@ -159,6 +159,21 @@ body {
   background-color: #FFF500;
 }
 
+.image {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 999px;
+}
+
+.image img {
+  width: 100%;
+}
+
 .header {
   grid-area: header;
   display: block;
