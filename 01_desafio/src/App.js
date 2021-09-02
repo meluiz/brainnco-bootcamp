@@ -6,7 +6,17 @@ import Footer from './components/footer'
 
 const App = () => {
   return (
-    <h1>App</h1>
+    <div className="wrapper">
+      <div className="container">
+        <Header>
+          Header
+        </Header>
+        <Menu>Menu</Menu>
+        <Sidebar>Sidebar</Sidebar>
+        <Main>Main</Main>
+        <Footer>Footer</Footer>
+      </div>
+    </div>
   )
 }
 
