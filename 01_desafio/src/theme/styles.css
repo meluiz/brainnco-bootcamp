@@ -129,6 +129,11 @@ body {
   font-size: 12px;
 }
 
+.text {
+  color: #7C7977;
+  font-size: 16px;
+}
+
 .text.small {
   color: #7C7977;
   font-size: 14px;
