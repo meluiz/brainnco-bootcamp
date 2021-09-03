@@ -66,8 +66,8 @@ const App = () => {
       <div className="grid-area">
         <Header />
         <Menu />
-        <Sidebar />
-        <Main />
+        <Sidebar articles={articles} handleArticle={handleArticle} />
+        <Main icon={icon} title={title} content={content} />
         <Footer />
       </div>
     </div>
