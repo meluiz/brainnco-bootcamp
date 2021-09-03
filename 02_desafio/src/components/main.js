@@ -11,7 +11,7 @@ const Main = ({ icon, title, content }) => {
             </div>
             <H1>{ title }</H1>
           </div>
-          <div class="main-article">
+          <div className="main-article">
             { content }
           </div>
         </article>
