@@ -59,6 +59,15 @@ body {
   background-color: transparent;
 }
 
+.button-primary {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  background-color: #ee4444;
+}
+
 .heading-1 {
   margin-top: 12px;
   font-size: 28px;
