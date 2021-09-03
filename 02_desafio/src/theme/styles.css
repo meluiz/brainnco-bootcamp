@@ -47,6 +47,18 @@ body {
                        'footer footer';
 }
 
+.button {
+  border: 0;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.button-simple {
+  color: white;
+  padding: 4px 8px;
+  background-color: transparent;
+}
+
 .header {
   grid-area: header;
   position: relative;
