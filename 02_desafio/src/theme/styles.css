@@ -80,6 +80,12 @@ body {
   justify-content: flex-end;
 }
 
+.text {
+  color: #d4d4d4;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
 .menu {
   grid-area: menu;
   position: relative;
