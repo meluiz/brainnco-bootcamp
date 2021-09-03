@@ -40,7 +40,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 208px;
-  grid-template-rows: 208px 112px auto 86px;
+  grid-template-rows: 208px 32px auto 86px;
   grid-template-areas: 'header header'
                        'menu menu'
                        'sidebar main'
@@ -82,15 +82,20 @@ body {
 .menu-content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.menu-content .icon {
-  font-size: 78px;
-  vertical-align: middle;
-  transform: translateY(-50%);
-  cursor: pointer;
-  user-select: none;
+.menu-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 2px;
+  transform: translateY(calc(-100% - 5px));
+  background-color: #2f3437;
+}
+
+.menu-buttons button:first-child {
+  border-right: 1px solid rgba(255,255,255,.1);
 }
 
 .sidebar {
