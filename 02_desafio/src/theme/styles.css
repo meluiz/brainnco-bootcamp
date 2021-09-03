@@ -59,6 +59,12 @@ body {
   background-color: transparent;
 }
 
+.heading-1 {
+  margin-top: 12px;
+  font-size: 28px;
+  color: #F1F1F1;
+}
+
 .header {
   grid-area: header;
   position: relative;
