@@ -1,7 +1,11 @@
 const Header = () => {
   return (
     <header className="header">
-      Header
+      <div className="container">
+        <div className="header-content">
+          dasd
+        </div>
+      </div>
     </header>
   )
 }
