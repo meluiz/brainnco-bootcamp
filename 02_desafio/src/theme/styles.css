@@ -157,7 +157,26 @@ body {
 
 .main {
   grid-area: main;
+  position: relative;
 }
+
+.main-content,
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  gap: 24px;
+}
+
+.main-icon {
+  height: 24px;
+  font-size: 76px;
+  user-select: none;
+  transform: translateY(-96px);
+}
+
 
 .footer {
   grid-area: footer;
