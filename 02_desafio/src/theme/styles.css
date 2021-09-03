@@ -62,7 +62,7 @@ body {
 .heading-1 {
   margin-top: 12px;
   font-size: 28px;
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 
 .heading-3 {
@@ -165,7 +165,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .main {
   grid-area: main;
