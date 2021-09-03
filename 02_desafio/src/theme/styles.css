@@ -42,9 +42,9 @@ body {
   grid-template-columns: 208px;
   grid-template-rows: 208px 32px auto 86px;
   grid-template-areas: 'header header'
-                       'menu menu'
+                       'sidebar menu'
                        'sidebar main'
-                       'footer footer';
+                       'sidebar footer';
 }
 
 .button {
@@ -100,7 +100,54 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  background-color: #373c3f;
 }
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 24px 0;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sidebar-list li {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar-list li a {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 6px 8px;
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+.sidebar-list li a:hover {
+  color: white;
+  background-color: rgba(255,255,255,.06);
+}
+
+.sidebar-list li a .icon {
+  display: inline-flex;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .main {
   grid-area: main;
