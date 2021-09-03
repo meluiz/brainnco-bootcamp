@@ -53,6 +53,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.button:hover {
+  filter: brightness(.9);
+}
+
 .button-simple {
   color: white;
   padding: 4px 8px;
