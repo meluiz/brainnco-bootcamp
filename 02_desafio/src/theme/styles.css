@@ -83,7 +83,6 @@ body {
   color: #f1f1f1;
 }
 
-
 .header {
   grid-area: header;
   position: relative;
@@ -139,6 +138,11 @@ body {
   flex-direction: column;
   position: relative;
   padding: 24px 0;
+}
+
+.sidebar-buttons {
+  padding: 0 12px;
+  margin-bottom: 24px;
 }
 
 .sidebar-list {
