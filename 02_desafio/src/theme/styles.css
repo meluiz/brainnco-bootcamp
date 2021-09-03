@@ -64,6 +64,21 @@ body {
 
 .menu {
   grid-area: menu;
+  position: relative;
+}
+
+.menu-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu-content .icon {
+  font-size: 78px;
+  vertical-align: middle;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
 }
 
 .sidebar {

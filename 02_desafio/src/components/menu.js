@@ -1,7 +1,11 @@
 const Menu = () => {
   return (
-    <nav clasName="menu">
-      Navegação
+    <nav className="menu">
+      <div className="container">
+        <div className="menu-content">
+          <span className="icon">📕</span>
+        </div>
+      </div>
     </nav>
   )
 }
