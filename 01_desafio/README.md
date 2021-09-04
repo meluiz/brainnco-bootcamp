@@ -1,2 +1,2 @@
 # Preview
-<img src="https://i.imgur.com/DGUqlFK.gif">
+[Preview](https://i.imgur.com/DGUqlFK.gif)
