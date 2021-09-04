@@ -16,7 +16,7 @@ const Sidebar = ({ articles, handleArticle }) => {
                 href="/"
                 onClick={(event) => {
                   event.preventDefault()
-                  handleArticle(article.icon, article.title, article.content)
+                  handleArticle(article)
                 }}
               >
                 <span className="icon">{article.icon}</span>

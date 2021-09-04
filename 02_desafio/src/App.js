@@ -294,14 +294,10 @@ const App = () => {
     }
   ]
 
-  const [ icon, setIcon ] = React.useState(articles[0].icon)
-  const [ title, setTitle ] = React.useState(articles[0].title)
-  const [ content, setContent ] = React.useState(articles[0].content)
+  const [ article, setArticle ] = React.useState(articles[0])
 
-  const handleArticle = (icon, title, content) => {
-    setIcon(icon)
-    setTitle(title)
-    setContent(content)
+  const handleArticle = (article) => {
+    setArticle(article)
   }
 
   return (
@@ -310,7 +306,7 @@ const App = () => {
         <Header />
         <Menu />
         <Sidebar articles={articles} handleArticle={handleArticle} />
-        <Main icon={icon} title={title} content={content} />
+        <Main article={article} />
         <Footer />
       </div>
     </div>

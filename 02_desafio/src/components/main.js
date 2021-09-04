@@ -1,18 +1,18 @@
 import { H1 } from './heading'
 
-const Main = ({ icon, title, content }) => {
+const Main = ({ article }) => {
   return (
     <main className="main">
       <div className="container">
         <article className="main-content">
           <div className="main-header">
             <div className="main-icon">
-              { icon }
+              { article.icon }
             </div>
-            <H1>{ title }</H1>
+            <H1>{ article.title }</H1>
           </div>
           <div className="main-article">
-            { content }
+            { article.content }
           </div>
         </article>
       </div>
