@@ -1,13 +1,16 @@
+import Form from "./components/form"
+import Table from "./components/table"
+
 const App = () => {
   return (
     <div className="wrapper">
       <div className="container">
         <div className="grid-area">
           <div className="grid-form">
-            Formulário
+            <Form />
           </div>
           <div className="grid-table">
-            Tabéla
+            <Table />
           </div>
         </div>
       </div>
