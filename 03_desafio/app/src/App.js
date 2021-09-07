@@ -5,13 +5,9 @@ const App = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <div className="grid-area">
-          <div className="grid-form">
-            <Form />
-          </div>
-          <div className="grid-table">
-            <Table />
-          </div>
+        <div className="flexible">
+          <Form />
+          <Table />
         </div>
       </div>
     </div>
