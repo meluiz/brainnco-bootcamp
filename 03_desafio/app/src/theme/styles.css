@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@
 
 html,
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .wrapper {
@@ -23,7 +24,7 @@ body {
   position: relative;
   overflow: hidden;
   overflow-y: auto;
-  background-color: #F4F4F5;
+  background-color: #1C1917;
 }
 
 .container {
@@ -35,130 +36,111 @@ body {
   margin: 0 auto;
 }
 
-.grid-area {
+.flexible {
   width: 100%;
   min-height: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'grid-form grid-table';
-  position: relative
-}
-
-.grid-form {
-  min-height: 0;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  grid-area: grid-form;
-}
-
-.grid-table {
-  min-height: 0;
-  position: relative;
-  grid-area: grid-table;
+  padding: 64px 0;
 }
 
 .form-wrapper {
-  width: 100%;
   display: block;
   position: relative;
-  padding: 32px 24px;
+  padding: 12px 0;
 }
 
 .form {
-  width: 100%;
-  max-width: 512px;
-  min-height: 0;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
-  margin: 0 auto;
+  gap: 12px;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 10px 8px;
+  flex: 1;
 }
 
-.form-label {
+.form-subgroup {
   width: 100%;
-  min-height: 100%;
+  display: flex;
   position: relative;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 0 2px #A1A1AA;
-  transition: all 150ms ease;
 }
 
-.form-label:focus-within {
-  box-shadow: 0 0 0 2px #0284C7;
+.form-subgroup .inputbox {
+  padding-left: 36px;
 }
 
-.form-label:focus-within .label {
-  color: #0284C7;
-  font-weight: 600;
+.form-submit {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  background-color: #3B82F6;
+  cursor: pointer;
+  letter-spacing: .125rem;
+}
+
+.form-submit:active {
+  transform: scale(.97);
+}
+
+.form-submit:hover {
+  background-color: #2563EB;
 }
 
 .label {
-  transition: all 150ms ease;
-  font-weight: 600;
+  display: flex;
+  position: relative;
+  border-radius: 4px;
+  color: #78716C;
+  background-color: #292524;
+}
+
+.text {
   position: absolute;
-  top: 8px; left: 12px;
-  color: #A1A1AA;
+  top: 14px; left: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .input {
   width: 100%;
-  border: 0;
-  padding: 28px 12px 10px 12px;
-  color: #3F3F46;
-  font-size: 16px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  background-color: transparent;
+  height: 69px;
 }
 
-.input:focus {
-  outline: none;
-}
-
-.input-color {
-  width: 18px;
-  height: 18px;
+.inputcolor {
+  width: 16px;
+  height: 16px;
   border: 0;
   border-radius: 999px;
   overflow: hidden;
   position: absolute;
-  top: calc(50% + 9px); right: 12px;
-  transform: translateY(-50%);
-  cursor: pointer;
-  appearance: none;
-	-webkit-appearance: none;
+  bottom: 18px; left: 12px;
 }
 
-.input-color ~ input {
-  pointer-events: none;
-}
-
-.input-color::-webkit-color-swatch-wrapper {
-	padding: 0;
-}
-
-.input-color::-webkit-color-swatch {
-	border: none;
-}
-
-.form-submit {
+.inputbox {
+  width: 100%;
+  height: 69px;
   border: 0;
-  border-radius: 8px;
-  padding: 24px 0;
-  background-color: #2563EB;
-  cursor: pointer;
-  color: white;
+  position: relative;
+  background: transparent;
+  padding: 28px 12px 12px 12px;
   font-size: 16px;
-  font-weight: 600;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #D6D3D1;
+  font-size: 18px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.inputbox:focus {
+  outline: none;
 }
