@@ -34,3 +34,24 @@ body {
   overflow: hidden;
   margin: 0 auto;
 }
+
+.grid-area {
+  width: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'grid-form grid-table';
+  position: relative
+}
+
+.grid-form {
+  min-height: 0;
+  position: relative;
+  grid-area: grid-form;
+}
+
+.grid-table {
+  min-height: 0;
+  position: relative;
+  grid-area: grid-table;
+}
