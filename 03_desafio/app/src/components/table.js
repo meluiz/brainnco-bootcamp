@@ -1,4 +1,23 @@
-const Table = ({ cars }) => {
+const Table = ({ cars, setCars }) => {
+
+  const handleDeleteCar = (event, plate) => {
+    fetch ('http://localhost:3333/cars', {
+      method: 'delete',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ plate })
+    })
+    .then(response => response.json())
+    .then(() => {
+      const findIndex = cars.findIndex((car) => car.plate === plate)
+      if (findIndex !== -1) {
+        setCars((prevState) => {
+          prevState.splice(findIndex, 1)
+          return [ ...prevState ]
+        })
+      }
+    })
+  }
+
   return (
     <div className="table-wrapper">
       <h2 className="table-title">Meus veículos</h2>
@@ -48,7 +67,11 @@ const Table = ({ cars }) => {
             </td>
             <td>
               <div className="table-actions">
-                <button className="table-button" type="button">
+                <button
+                  className="table-button"
+                  type="button"
+                  onClick={(event) => handleDeleteCar(event, car.plate)}
+                  >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="3 6 5 6 21 6"></polyline>
                     <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
