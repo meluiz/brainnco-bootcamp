@@ -19,7 +19,7 @@ const Form = () => {
     setInputPlate(format.toUpperCase())
   }
 
-  const handleReset = () => {
+  const handleFormReset = () => {
     setInputYear('')
     setInputPlate('')
     setToggle(false)
@@ -171,7 +171,7 @@ const Form = () => {
             { alterationBar.text }
           </div>
           <div className="form-buttons">
-            <button className="form-button" type="reset" onClick={handleReset}>
+            <button className="form-button" type="reset" onClick={handleFormReset}>
               Redefinir
             </button>
             <button className="form-button form-button__submit" type="submit">
