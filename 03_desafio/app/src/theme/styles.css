@@ -149,6 +149,7 @@ body {
   color: #D6D3D1;
   font-size: 18px;
   font-family: 'Catamaran', sans-serif;
+  cursor: text;
 }
 
 .inputbox:focus {
