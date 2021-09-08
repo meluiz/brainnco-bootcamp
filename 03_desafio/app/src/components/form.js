@@ -40,6 +40,52 @@ const Form = () => {
     }
   }
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault()
+  
+    const { image, brandModel, plate, year, color } = event.target.elements
+    setAlterationBar({
+      error: false,
+      text: 'Houve uma alteração no formulário'
+    })
+
+    fetch('http://localhost:3333/cars', {
+      method: 'post',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        image: image.value,
+        brandModel: brandModel.value,
+        year: Number(year.value),
+        plate: plate.value,
+        color: color.value
+      })
+    })
+    .then(response => response.json())
+    .then((response) => {
+      if (response.error) {
+        return setAlterationBar({
+          error: true,
+          text: `${response.message}`
+        })
+      }
+
+      setCars((prevState) => {
+        return [
+          ...prevState, {
+            image: image.value,
+            brandModel: brandModel.value,
+            year: Number(year.value),
+            plate: plate.value,
+            color: color.value
+          }
+        ]
+      })
+
+      handleFormReset()
+      event.target.reset()
+    })
+  }
+
   return (
     <div className="form-wrapper">
       <h2 className="form-title">Cadastre um novo carro</h2>
