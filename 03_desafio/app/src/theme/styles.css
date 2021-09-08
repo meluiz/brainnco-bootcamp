@@ -110,6 +110,30 @@ body {
   transform: translateX(-50%) scale(1);
 }
 
+.form-fixed.error {
+  opacity: .9;
+  background-color: #ED4245;
+  animation: form-error-shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes form-error-shake {
+  10%, 90% {
+    left: calc(50% - 1px);
+  }
+  
+  20%, 80% {
+    left: calc(50% + 2px);
+  }
+
+  30%, 50%, 70% {
+    left: calc(50% - 4px);
+  }
+
+  40%, 60% {
+    left: calc(50% + 4px);
+  }
+}
+
 .form-fixed__text {
   display: flex;
   align-items: center;
