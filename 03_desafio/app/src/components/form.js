@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = () => {
+const Form = ({ setCars }) => {
   const [ isToggle, setToggle ] = React.useState(false)
   const [ inputPlate, setInputPlate ] = React.useState('')
   const [ inputYear, setInputYear ] = React.useState('')
