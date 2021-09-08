@@ -166,9 +166,9 @@ const Form = () => {
             </div>
           </label>
         </div>
-        <div className={`form-fixed${isToggle ? ' visible' : ''}`}>
-          <div className="form-fixed__text">
-            Oops! Houve uma alteração no formulário
+        <div className={`form-fixed${isToggle ? ' visible' : ''}${alterationBar.error ? ' error' : ''}`}>
+          <div className="form-fixed__text number">
+            { alterationBar.text }
           </div>
           <div className="form-buttons">
             <button className="form-button" type="reset" onClick={handleReset}>
