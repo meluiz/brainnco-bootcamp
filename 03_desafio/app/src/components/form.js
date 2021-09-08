@@ -42,6 +42,7 @@ const Form = () => {
 
   return (
     <div className="form-wrapper">
+      <h2 className="form-title">Cadastre um novo carro</h2>
       <form className="form" onChange={handleInputsByForm}>
         <div className="form-group">
           <label className="label" htmlFor="image">

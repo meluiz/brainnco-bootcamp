@@ -59,11 +59,17 @@ body {
   display: block;
   position: relative;
   padding: 12px 0;
+  margin-bottom: 32px;
 }
 
 .form {
   display: flex;
   gap: 12px;
+}
+
+.form-title {
+  color: #E7E5E4;
+  margin-bottom: 28px;
 }
 
 .form-group {
