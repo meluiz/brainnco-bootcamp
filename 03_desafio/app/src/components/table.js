@@ -35,9 +35,8 @@ const Table = ({ cars, setCars }) => {
         <tbody className="table-body">
          { cars.length === 0 ? (
           <tr className="table-empty">
-            <td colSpan="6">
-              Nenhum veículo foi encontrado
-            </td>
+            <td></td>
+            <td colspan="5" style={{ textAlign: 'center' }}>Nenhum veículo foi encontrado</td>
           </tr>
          ) : cars.map((car) => (
           <tr key={car.plate}>

@@ -268,7 +268,8 @@ body {
 }
 
 .table-body tr.table-empty td {
-  padding: 24px 0;
+  padding: 32px 0;
+  text-align: center;
 }
 
 .table-body tr td {
@@ -285,6 +286,16 @@ body {
   width: 20%;
   padding: 0 24px;
   text-align: left;
+}
+
+.table-body tr td:nth-child(3) {
+  width: 31%;
+}
+
+.table-body tr td:nth-child(4),
+.table-body tr td:nth-child(5),
+.table-body tr td:nth-child(6) {
+  width: 11%;
 }
 
 .table-body .table-image {
