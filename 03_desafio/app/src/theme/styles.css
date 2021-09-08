@@ -194,3 +194,145 @@ body {
 .inputbox:focus {
   outline: none;
 }
+
+.table-wrapper {
+  display: block;
+  position: relative;
+  padding: 12px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-title {
+  color: #E7E5E4;
+  margin-bottom: 28px;
+}
+
+.table-head tr {
+  border-bottom: 1px solid #44403C;
+}
+
+.table-head tr th {
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #78716C;
+}
+
+.table-head tr th:nth-child(2) {
+  text-align: left;
+  padding: 0 24px;
+}
+
+.table-body tr {
+  padding: 12px 0;
+  border-bottom: 1px solid #292524;
+}
+
+.table-body tr.table-noborder {
+  border-bottom: 0 !important;
+}
+
+.table-body tr td {
+  text-align: center;
+  padding: 12px 0;
+  color: #F5F5F4;
+}
+
+.table-body tr td:nth-child(1) {
+  width: 8%;
+}
+
+.table-body tr td:nth-child(2) {
+  width: 20%;
+  padding: 0 24px;
+  text-align: left;
+}
+
+.table-body .table-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-body .table-image img {
+  width: 100%;
+}
+
+.table-body .table-model {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-body .table-model .model {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.table-body .table-model .year {
+  color: #A8A29E;
+  font-weight: 600;
+}
+
+.table-body .table-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-body .table-color span {
+  display: inline-block;
+  width: 64%;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.table-body .table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-body .table-actions .table-button {
+  border: 0;
+  padding: 8px;
+  color: #57534E;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.table-body .table-actions .table-button:hover {
+  color: #ED4245;
+}
+
+.table-td__counter {
+  padding: 18px;
+  border: 0;
+}
+
+.table-body .table-counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 12px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.table-body .table-counter span {
+  display: flex;
+  align-items: center;
+}
+
+.table-body .table-counter .type {
+  font-weight: 600;
+  font-family: 'Karla', sans-serif !important;
+}
+
+.table-body .table-counter .number {
+  color: #A8A29E;
+}
