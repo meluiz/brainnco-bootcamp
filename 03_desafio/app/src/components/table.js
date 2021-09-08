@@ -21,27 +21,29 @@ const Table = ({ cars }) => {
             </td>
           </tr>
          ) : cars.map((car) => (
-          <tr>
+          <tr key={car.plate}>
             <td>
               <figure className="table-image">
-                <img src="https://img2.icarros.com/dbimg/imgmodelo/1/2381_6.png" alt="" />
+                <img src={car.image} alt={car.brandModel} />
               </figure>
             </td>
             <td>
               <div className="table-model">
-                <p className="model number">Ford Fiesta</p>
-                <p className="year number">2021</p>
+                <p className="model number">{car.brandModel}</p>
+                <p className="year number">{car.year}</p>
               </div>
             </td>
             <td>
-              <span className="number">ABC-1234</span>
+              <span className="number">{car.plate}</span>
             </td>
             <td>
-              <span className="number">2019</span>
+              <span className="number">{car.year}</span>
             </td>
             <td>
               <div className="table-color">
-                <span></span>
+                <span style={{
+                  backgroundColor: car.color
+                }}></span>
               </div>
             </td>
             <td>
