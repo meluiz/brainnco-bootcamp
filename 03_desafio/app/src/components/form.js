@@ -89,7 +89,11 @@ const Form = () => {
   return (
     <div className="form-wrapper">
       <h2 className="form-title">Cadastre um novo carro</h2>
-      <form className="form" onChange={handleInputsByForm}>
+      <form
+        className="form"
+        onChange={handleInputsByForm}
+        onSubmit={handleFormSubmit}
+        >
         <div className="form-group">
           <label className="label" htmlFor="image">
             <span className="text">Url da imagem</span>
