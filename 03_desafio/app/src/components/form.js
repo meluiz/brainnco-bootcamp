@@ -5,6 +5,10 @@ const Form = () => {
   const [ inputPlate, setInputPlate ] = React.useState('')
   const [ inputYear, setInputYear ] = React.useState('')
   const [ inputColor, setInputColor ] = React.useState('#ffffff')
+  const [ alterationBar, setAlterationBar ] = React.useState({
+    error: false,
+    text: 'Houve uma alteração no formulário'
+  })
 
   const handleInputYear = (event) => {
     const format = event.target.value.replace(/\D/g, '')
