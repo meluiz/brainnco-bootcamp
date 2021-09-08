@@ -80,30 +80,67 @@ body {
   padding-left: 36px;
 }
 
-.form-submit {
-  width: 75%;
-  height: 100%;
+.form-fixed {
+  width: 100%;
+  max-width: 768px;
+  border-radius: 4px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 14px; left: 50%;
+  transition: all 300ms ease;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) scale(.9);
+  background-color: #292524;
+}
+
+.form-fixed.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.form-fixed__text {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 4px;
+  font-size: 17px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.form-button {
+  min-width: 96px;
+  cursor: pointer;
   border: 0;
   border-radius: 4px;
-  text-transform: uppercase;
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  background-color: transparent;
   color: white;
-  background-color: #3B82F6;
-  cursor: pointer;
-  letter-spacing: .125rem;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Catamaran', sans-serif;
+  padding: 8px 24px;
 }
 
-.form-submit:active {
-  transform: scale(.97);
+.form-button:hover {
+  text-decoration: underline;
 }
 
-.form-submit:hover {
-  background-color: #2563EB;
+.form-button__submit {
+  background-color: #3ca95e;
+}
+
+.form-button__submit:hover {
+  text-decoration: none;
+  background-color: #349151;
 }
 
 .label {
