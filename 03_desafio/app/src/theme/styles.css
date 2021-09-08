@@ -101,6 +101,7 @@ body {
   opacity: 0;
   transform: translateX(-50%) scale(.9);
   background-color: #292524;
+  z-index: 10;
 }
 
 .form-fixed.visible {
