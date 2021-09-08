@@ -6,6 +6,14 @@ const App = () => {
 
   const [ cars, setCars ] = React.useState([])
 
+  React.useEffect(() => {
+    fetch('http://localhost:3333/cars')
+    .then(response => response.json())
+    .then((response) => {
+      setCars([ ...response ])
+    })
+  }, [])
+
   return (
     <div className="wrapper">
       <div className="container">
