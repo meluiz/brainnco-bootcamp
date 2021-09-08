@@ -243,6 +243,10 @@ body {
   border-bottom: 0 !important;
 }
 
+.table-body tr.table-empty td {
+  padding: 24px 0;
+}
+
 .table-body tr td {
   text-align: center;
   padding: 12px 0;
