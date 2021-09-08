@@ -27,6 +27,10 @@ const Form = ({ setCars }) => {
     setInputYear('')
     setInputPlate('')
     setToggle(false)
+    setAlterationBar({
+      error: false,
+      text: 'Houve uma alteração no formulário'
+    })
   }
 
   const handleInputsByForm = (event) => {
