@@ -1,4 +1,17 @@
-import { TableBody, TableHead, TableEmpty, TableWrapper, Title, Wrapper, TableImage, TableModel, TableColor, SpanNumber, TableActions, TableButton, TableCounter } from "./styled"
+import {
+  TableBody,
+  TableHead,
+  TableEmpty,
+  TableWrapper,
+  Title, Wrapper,
+  TableImage,
+  TableModel,
+  TableColor,
+  SpanNumber,
+  TableActions,
+  TableButton,
+  TableCounter
+} from "./styled"
 
 const Table = ({ cars, setCars }) => {
 
