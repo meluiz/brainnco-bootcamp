@@ -40,7 +40,7 @@ export const Wrapper = styled.div`
     visibility: visible;
   }
 
-  &:hover:aftr {
+  &:hover:after {
     border-color: #FF0080;
   }
 

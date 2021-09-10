@@ -2,16 +2,18 @@ import Box from '../box'
 import { H1 } from '../heading'
 import Button from '../button'
 
+import { Container, Wrapper } from './styles'
+
 const Menu = () => {
   return (
-    <nav className="menu">
+    <Wrapper>
       <Box label="Menu">
-        <div className="menu-container">
+        <Container>
           <H1>Brainn Co.</H1>
           <Button kind="primary">Say hello</Button>
-        </div>
+        </Container>
       </Box>
-    </nav>
+    </Wrapper>
   )
 }
 

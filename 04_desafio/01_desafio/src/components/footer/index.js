@@ -2,16 +2,18 @@ import Box from '../box'
 import { H4 } from '../heading'
 import Text from '../paragraph'
 
+import { Container, Wrapper } from './styles'
+
 const Footer = () => {
   return (
-    <footer className="footer">
+    <Wrapper>
       <Box label="Footer">
-        <div className="footer-container">
+        <Container>
           <H4>meluiz &copy; 2021</H4>
           <Text small>Todos os direitos reservados</Text>
-        </div>
+        </Container>
       </Box>
-    </footer>
+    </Wrapper>
   )
 }
 

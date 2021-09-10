@@ -1,8 +1,10 @@
+import { Wrapper } from "./styles"
+
 const Button = ({ kind, children }) => {
   return (
-    <button className={`button button-${kind}`} type="button">
+    <Wrapper kind={kind} type="button">
       { children }
-    </button>
+    </Wrapper>
   )
 }
 

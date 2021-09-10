@@ -2,11 +2,13 @@ import Box from '../box'
 import { H1, H2 } from '../heading'
 import Text from '../paragraph'
 
+import { Wrapper, Container } from './styles'
+
 const Main = () => {
   return (
-    <main className="main">
+    <Wrapper>
       <Box label="Main">
-       <div className="main-container">
+       <Container>
           <H1>Frases de Lerolero</H1>
           <Text>Caros amigos, o desafiador cenário globalizado possibilita uma
            melhor visão global do processo de comunicação como um todo.</Text>
@@ -35,9 +37,9 @@ const Main = () => {
             mao miau meo myau ngeung mi'au mňau miaŭ. Mjau mjau miaŭ myām̥ō.</Text>
 
           <H2>I-Isso é tudo, p-p-pessoal</H2>
-       </div>
+       </Container>
       </Box>
-    </main>
+    </Wrapper>
   )
 }
 

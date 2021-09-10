@@ -1,6 +1,8 @@
-const Text = ({ small, children }) => {
+import { Paragraph } from "./styles"
+
+const Text = ({ small = false, children }) => {
   return (
-    <p className={`text${small ? ' small' : ''}`}>{ children }</p>
+    <Paragraph small={small}>{ children }</Paragraph>
   )
 }
 

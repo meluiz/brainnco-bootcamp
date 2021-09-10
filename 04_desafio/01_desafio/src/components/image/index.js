@@ -1,8 +1,10 @@
+import { Container } from "./styles"
+
 const Avatar = ({ src, alt }) => {
   return (
-    <figure className="avatar">
+    <Container>
       <img src={src} alt={alt} />
-    </figure>
+    </Container>
   )
 }
 
