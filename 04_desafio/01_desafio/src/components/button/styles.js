@@ -31,5 +31,5 @@ export const Wrapper = styled.button`
     filter: brightness(.9);
   }
 
-  ${({ kind }) => handleButtonStyle(kind)}
+  ${({ styleType }) => handleButtonStyle(styleType)}
 `

@@ -2,7 +2,7 @@ import { Wrapper } from "./styles"
 
 const Button = ({ kind, children }) => {
   return (
-    <Wrapper kind={kind} type="button">
+    <Wrapper styleType={kind} type="button">
       { children }
     </Wrapper>
   )
