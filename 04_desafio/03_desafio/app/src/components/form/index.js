@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { FakeInput, FormButton, FormFixed, FormFixedButtons, FormFixedText, FormGroup, FormSubGroup, FormWrapper, Input, InputColor, Label, Text, Title, Wrapper } from './styled'
+
 const Form = ({ setCars }) => {
   const [ isToggle, setToggle ] = React.useState(false)
   const [ inputPlate, setInputPlate ] = React.useState('')
@@ -95,43 +97,40 @@ const Form = ({ setCars }) => {
   }
 
   return (
-    <div className="form-wrapper">
-      <h2 className="form-title">Cadastre um novo carro</h2>
-      <form
-        className="form"
+    <Wrapper>
+      <Title>Cadastre um novo carro</Title>
+      <FormWrapper
         onChange={handleInputsByForm}
         onSubmit={handleFormSubmit}
         >
-        <div className="form-group">
-          <label className="label" htmlFor="image">
-            <span className="text">Url da imagem</span>
-            <input
+        <FormGroup>
+          <Label htmlFor="image">
+            <Text>Url da imagem</Text>
+            <Input
               type="url"
-              className="inputbox"
               name="image"
               id="image"
               required
               />
-          </label>
-        </div>
-        <div className="form-group">
-          <label className="label" htmlFor="brandModel">
-            <span className="text">Modelo do carro</span>
-            <input
+          </Label>
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="brandModel">
+            <Text>Modelo do carro</Text>
+            <Input
               type="text"
-              className="inputbox"
               name="brandModel"
               id="brandModel"
               required
               />
-          </label>
-        </div>
-        <div className="form-group">
-          <label className="label" htmlFor="plate">
-            <span className="text">Placa do carro</span>
-            <input
+          </Label>
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="plate">
+            <Text>Placa do carro</Text>
+            <Input
               type="text"
-              className="inputbox number"
+              number={true}
               name="plate"
               id="plate"
               value={inputPlate}
@@ -140,14 +139,14 @@ const Form = ({ setCars }) => {
               required
               onChange={handleInputPlate}
               />
-          </label>
-        </div>
-        <div className="form-group">
-          <label className="label" htmlFor="year">
-            <span className="text">Ano de fabricação</span>
-            <input
+          </Label>
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="year">
+            <Text>Ano de fabricação</Text>
+            <Input
               type="text"
-              className="inputbox number"
+              number={true}
               name="year"
               id="year"
               value={inputYear}
@@ -156,13 +155,13 @@ const Form = ({ setCars }) => {
               required
               onChange={handleInputYear}
               />
-          </label>
-        </div>
-        <div className="form-group">
-          <label className="label" htmlFor="color">
-            <span className="text">Cor do carro</span>
-            <div className="form-subgroup">
-              <input
+          </Label>
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="color">
+            <Text>Cor do carro</Text>
+            <FormSubGroup>
+              <InputColor
                 type="color"
                 className="inputcolor"
                 id="color"
@@ -170,25 +169,25 @@ const Form = ({ setCars }) => {
                 value={inputColor}
                 onChange={(event) => setInputColor(event.target.value)}
                 />
-              <div className="inputbox number center-start">{inputColor}</div>
-            </div>
-          </label>
-        </div>
-        <div className={`form-fixed${isToggle ? ' visible' : ''}${alterationBar.error ? ' error' : ''}`}>
-          <div className="form-fixed__text number">
+              <FakeInput number={true}>{inputColor}</FakeInput>
+            </FormSubGroup>
+          </Label>
+        </FormGroup>
+        <FormFixed className={`${isToggle ? ' visible' : ''}${alterationBar.error ? ' error' : ''}`}>
+          <FormFixedText number={true}>
             { alterationBar.text }
-          </div>
-          <div className="form-buttons">
-            <button className="form-button" type="reset" onClick={handleFormReset}>
+          </FormFixedText>
+          <FormFixedButtons>
+            <FormButton type="reset" onClick={handleFormReset}>
               Redefinir
-            </button>
-            <button className="form-button form-button__submit" type="submit">
+            </FormButton>
+            <FormButton styleType="primary" type="submit">
               Salvar veículo
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
+            </FormButton>
+          </FormFixedButtons>
+        </FormFixed>
+      </FormWrapper>
+    </Wrapper>
   )
 }
 

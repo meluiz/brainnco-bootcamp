@@ -2,6 +2,8 @@ import React from "react"
 import Form from "./components/form"
 import Table from "./components/table"
 
+import { Container, Flexible, Wrapper } from "./theme/app"
+
 const App = () => {
 
   const [ cars, setCars ] = React.useState([])
@@ -15,14 +17,14 @@ const App = () => {
   }, [])
 
   return (
-    <div className="wrapper">
-      <div className="container">
-        <div className="flexible">
+    <Wrapper>
+      <Container>
+        <Flexible>
           <Form cars={cars} setCars={setCars} />
           <Table cars={cars} setCars={setCars} />
-        </div>
-      </div>
-    </div>
+        </Flexible>
+      </Container>
+    </Wrapper>
   )
 }
 

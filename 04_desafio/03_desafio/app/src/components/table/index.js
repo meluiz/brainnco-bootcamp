@@ -1,3 +1,5 @@
+import { TableBody, TableHead, TableEmpty, TableWrapper, Title, Wrapper, TableImage, TableModel, TableColor, SpanNumber, TableActions, TableButton, TableCounter } from "./styled"
+
 const Table = ({ cars, setCars }) => {
 
   const handleDeleteCar = (event, plate) => {
@@ -19,10 +21,10 @@ const Table = ({ cars, setCars }) => {
   }
 
   return (
-    <div className="table-wrapper">
-      <h2 className="table-title">Meus veículos</h2>
-      <table className="table">
-        <thead className="table-head">
+    <Wrapper>
+      <Title>Meus veículos</Title>
+      <TableWrapper>
+        <TableHead>
           <tr>
             <th></th>
             <th>Modelo</th>
@@ -31,43 +33,42 @@ const Table = ({ cars, setCars }) => {
             <th>Cor</th>
             <th>Ação</th>
           </tr>
-        </thead>
-        <tbody className="table-body">
+        </TableHead>
+        <TableBody>
          { cars.length === 0 ? (
-          <tr className="table-empty">
+          <tr>
             <td></td>
-            <td colSpan="5" style={{ textAlign: 'center' }}>Nenhum veículo foi encontrado</td>
+            <TableEmpty colSpan="5" style={{ textAlign: 'center' }}>Nenhum veículo foi encontrado</TableEmpty>
           </tr>
          ) : cars.map((car) => (
           <tr key={car.plate}>
             <td>
-              <figure className="table-image">
+              <TableImage>
                 <img src={car.image} alt={car.brandModel} />
-              </figure>
+              </TableImage>
             </td>
             <td>
-              <div className="table-model">
-                <p className="model number">{car.brandModel}</p>
-                <p className="year number">{car.year}</p>
-              </div>
+              <TableModel>
+                <p>{car.brandModel}</p>
+                <p>{car.year}</p>
+              </TableModel>
             </td>
             <td>
-              <span className="number">{car.plate}</span>
+              <SpanNumber>{car.plate}</SpanNumber>
             </td>
             <td>
-              <span className="number">{car.year}</span>
+              <SpanNumber>{car.year}</SpanNumber>
             </td>
             <td>
-              <div className="table-color">
+              <TableColor>
                 <span style={{
                   backgroundColor: car.color
                 }}></span>
-              </div>
+              </TableColor>
             </td>
             <td>
-              <div className="table-actions">
-                <button
-                  className="table-button"
+              <TableActions>
+                <TableButton
                   type="button"
                   onClick={(event) => handleDeleteCar(event, car.plate)}
                   >
@@ -77,23 +78,23 @@ const Table = ({ cars, setCars }) => {
                     <line x1="10" y1="11" x2="10" y2="17"></line>
                     <line x1="14" y1="11" x2="14" y2="17"></line>
                   </svg>
-                </button>
-              </div>
+                </TableButton>
+              </TableActions>
             </td>
           </tr>      
          ))}
-         <tr className="table-noborder">
+         <tr>
             <td colSpan="5"></td>
-            <td className="table-td__counter">
-              <div className="table-counter">
-                <strong className="type">Contar</strong>
-                <span className="number">{ cars.length }</span>
+            <TableCounter>
+              <div>
+                <strong>Contar</strong>
+                <span>{ cars.length }</span>
               </div>
-            </td>
+            </TableCounter>
           </tr>
-        </tbody>
-      </table>
-    </div>
+        </TableBody>
+      </TableWrapper>
+    </Wrapper>
   )
 }
 
