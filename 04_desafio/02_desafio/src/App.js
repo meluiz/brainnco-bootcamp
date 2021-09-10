@@ -9,6 +9,9 @@ import Footer from './components/footer'
 import Text from './components/paragraph'
 import { H2 } from './components/heading'
 
+import { Area, Wrapper } from './theme/app'
+import { MainReference } from './components/main/styles'
+
 const App = () => {
   const articles = [
     {
@@ -67,9 +70,9 @@ const App = () => {
           ou diminuir sem a necessidade de realizar o refresh na página. 
         </Text>
 
-        <div className="main-reference">
+        <MainReference>
           <a href="https://www.totvs.com/blog/developers/o-que-e-html/" target="_blank" rel="noreferrer">Continue lendo</a>
-        </div>
+        </MainReference>
       </>
     },
     {
@@ -158,9 +161,9 @@ const App = () => {
           simples recurso.
         </Text>
 
-        <div className="main-reference">
+        <MainReference>
           <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos/" target="_blank" rel="noreferrer">Continue lendo</a>
-        </div>
+        </MainReference>
       </>
     },
     {
@@ -221,9 +224,9 @@ const App = () => {
           até mesmo em back-end.
         </Text>
 
-        <div className="main-reference">
+        <MainReference>
           <a href="https://kenzie.com.br/blog/javascript/" target="_blank" rel="noreferrer">Continue lendo</a>
-        </div>
+        </MainReference>
       </>
     },
     {
@@ -287,9 +290,9 @@ const App = () => {
           cada um destes componentes pode ser manipulado de maneira distinta.
         </Text>
 
-        <div className="main-reference">
+        <MainReference>
           <a href="https://kenzie.com.br/blog/react/" target="_blank" rel="noreferrer">Continue lendo</a>
-        </div>
+        </MainReference>
       </>
     }
   ]
@@ -301,15 +304,15 @@ const App = () => {
   }
 
   return (
-    <div className="wrapper">
-      <div className="grid-area">
+    <Wrapper>
+      <Area>
         <Header />
         <Menu />
         <Sidebar articles={articles} handleArticle={handleArticle} />
         <Main article={article} />
         <Footer />
-      </div>
-    </div>
+      </Area>
+    </Wrapper>
   )
 }
 

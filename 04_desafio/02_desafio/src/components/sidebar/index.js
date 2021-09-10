@@ -1,15 +1,17 @@
-import Button from './button'
+import Button from '../button'
+
+import { Wrapper, Buttons, Content, List } from './styles'
 
 const Sidebar = ({ articles, handleArticle }) => {
   return (
-    <aside className="sidebar">
-      <div className="sidebar-content">
-        <div className="sidebar-buttons">
+    <Wrapper>
+      <Content>
+        <Buttons>
           <Button kind="primary">
             Faça um upgrade
           </Button>
-        </div>
-        <ul className="sidebar-list">
+        </Buttons>
+        <List>
           { articles && articles.map((article) => (
             <li key={article._id}>
               <a
@@ -24,9 +26,9 @@ const Sidebar = ({ articles, handleArticle }) => {
               </a>
             </li>
           ))}
-        </ul>
-      </div>
-    </aside>
+        </List>
+      </Content>
+    </Wrapper>
   )
 }
 
