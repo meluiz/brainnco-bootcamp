@@ -178,7 +178,6 @@ const Form = ({ setCars }) => {
             <FormSubGroup>
               <InputColor
                 type="color"
-                className="inputcolor"
                 id="color"
                 name="color"
                 value={inputColor}
