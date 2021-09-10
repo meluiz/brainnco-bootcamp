@@ -1,8 +1,10 @@
+import { Wrapper } from './styles'
+
 const Box = ({ label, children }) => {
   return (
-    <div className="box" data-label={label}>
+    <Wrapper data-label={label}>
       { children }
-    </div>
+    </Wrapper>
   )
 }
 

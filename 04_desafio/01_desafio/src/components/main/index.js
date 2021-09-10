@@ -1,6 +1,6 @@
-import Box from './box'
-import { H1, H2 } from './heading'
-import Text from './paragraph'
+import Box from '../box'
+import { H1, H2 } from '../heading'
+import Text from '../paragraph'
 
 const Main = () => {
   return (

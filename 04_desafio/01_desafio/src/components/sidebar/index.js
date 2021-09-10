@@ -1,9 +1,9 @@
-import Box from './box'
+import Box from '../box'
 
-import { H4, H5 } from './heading'
-import Button from './button'
-import Image from './image'
-import Text from './paragraph'
+import { H4, H5 } from '../heading'
+import Button from '../button'
+import Image from '../image'
+import Text from '../paragraph'
 
 const Sidebar = () => {
   return (

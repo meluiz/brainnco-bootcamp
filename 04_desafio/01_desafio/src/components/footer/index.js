@@ -1,6 +1,6 @@
-import Box from './box'
-import { H4 } from './heading'
-import Text from './paragraph'
+import Box from '../box'
+import { H4 } from '../heading'
+import Text from '../paragraph'
 
 const Footer = () => {
   return (
