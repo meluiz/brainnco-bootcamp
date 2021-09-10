@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const handleButtonStyle = (color) => {
-  switch (color) {
+const handleButtonStyle = (style) => {
+  switch (style) {
     case 'primary':
       return `
         color: white;
