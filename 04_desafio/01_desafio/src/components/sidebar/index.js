@@ -12,7 +12,7 @@ const Sidebar = () => {
       <Box label="Sidebar">
         <Container>
           <Sticky>
-            <Info className="sidebar-info">
+            <Info>
               <H4>Criatividade</H4>
               <Text small>Esse conteúdo mostra o poder do React.</Text>
               <Button kind="secondary">
