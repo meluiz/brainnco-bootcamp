@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom'
 import App from './App'
 
-import './theme/styles.css'
+import { GlobalStyle } from './theme/globals'
 
 ReactDOM.render(
-  <App />,
+  <>
+    <GlobalStyle />
+    <App />
+  </>,
   document.querySelector('#root')
 )
