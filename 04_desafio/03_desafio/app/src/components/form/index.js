@@ -1,6 +1,21 @@
 import React from 'react'
 
-import { FakeInput, FormButton, FormFixed, FormFixedButtons, FormFixedText, FormGroup, FormSubGroup, FormWrapper, Input, InputColor, Label, Text, Title, Wrapper } from './styled'
+import {
+  FakeInput,
+  FormButton,
+  FormFixed,
+  FormFixedButtons,
+  FormFixedText,
+  FormGroup,
+  FormSubGroup,
+  FormWrapper,
+  Input,
+  InputColor,
+  Label,
+  Text,
+  Title,
+  Wrapper
+} from './styled'
 
 const Form = ({ setCars }) => {
   const [ isToggle, setToggle ] = React.useState(false)
