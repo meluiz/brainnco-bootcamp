@@ -23,13 +23,10 @@ const Table = ({ cars, setCars }) => {
     })
     .then(response => response.json())
     .then(() => {
-      const findIndex = cars.findIndex((car) => car.plate === plate)
-      if (findIndex !== -1) {
-        setCars((prevState) => {
-          prevState.splice(findIndex, 1)
-          return [ ...prevState ]
-        })
-      }
+      setCars((prevState) => {
+        const filtering = prevState.filter((car) => car.plate !== plate) 
+        return [ ...filtering ]
+      })
     })
   }
 
