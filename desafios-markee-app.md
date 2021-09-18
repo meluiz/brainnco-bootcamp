@@ -2,3 +2,5 @@
 
 - [Desafio 05](https://github.com/meluiz/brainnco-markee/pull/1)
 - [Desafio 05 - Pós correção](https://github.com/meluiz/brainnco-markee/pull/2)
+
+- [Desafio 06](https://github.com/meluiz/brainnco-markee/pull/3)
