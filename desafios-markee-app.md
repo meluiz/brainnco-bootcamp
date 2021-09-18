@@ -4,3 +4,4 @@
 - [Desafio 05 - Pós correção](https://github.com/meluiz/brainnco-markee/pull/2)
 
 - [Desafio 06](https://github.com/meluiz/brainnco-markee/pull/3)
+- [Desafio 06 - Renomeando pasta](https://github.com/meluiz/brainnco-markee/pull/4)
