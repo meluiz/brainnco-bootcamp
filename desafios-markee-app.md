@@ -7,3 +7,5 @@
 - [Desafio 06 - Renomeando pasta](https://github.com/meluiz/brainnco-markee/pull/4)
 
 - [Desafio 07](https://github.com/meluiz/brainnco-markee/pull/5)
+
+- [Desafio 08](https://github.com/meluiz/brainnco-markee/pull/6)
