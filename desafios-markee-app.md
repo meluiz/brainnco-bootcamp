@@ -14,3 +14,4 @@
 - [Desafio 09 - Corrigindo redirecionamento](https://github.com/meluiz/brainnco-markee/pull/8)
 
 - [Extra - Responsividade](https://github.com/meluiz/brainnco-markee/pull/9)
+- [Extra - Refatorando](https://github.com/meluiz/brainnco-markee/pull/10)
